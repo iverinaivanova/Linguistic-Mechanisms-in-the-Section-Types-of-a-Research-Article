@@ -30,7 +30,7 @@ public class AbstractRetrieval {
 
         File dir = new File("../papersectionsretrieval/all_xmls");
         File[] files = dir.listFiles();
-        String path = "../papersectionsretrieval/acl_anthology_sections/abstracts.txt";
+        String path = "../sectionsretrieval/acl_anthology_sections/abstracts.txt";
         for (File file : files) {
             Scanner scan = new Scanner(file, "UTF-8");
             String contents = "";
