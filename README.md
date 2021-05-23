@@ -3,7 +3,7 @@
 ### Overview of the repository
 The repository contains:
 
-1) a folder with java-based scripts (**sectionsretrieval**) with which 5 section types were retrieved from research articles in the field of Compulational Linguistics available from ACL Anthology Reference Corpus](https://acl-arc.comp.nus.edu.sg/)); 
+1) a folder with java-based scripts (**sectionsretrieval**) with which 5 section types were retrieved from research articles in the field of Compulational Linguistics available from [ACL Anthology Reference Corpus](https://acl-arc.comp.nus.edu.sg/)); 
 
 2) a folder with python-based scripts with which the frequency scores of a set of linguistic features were retrieved. 
 
