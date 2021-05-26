@@ -18,3 +18,5 @@ The repository contains:
 **Prerequisites for the python scripts**
 - Python 3.8 or later version
 - spaCy version  2.2.4
+- downloading a statistical model
+python -m spacy download en_core_web_sm
