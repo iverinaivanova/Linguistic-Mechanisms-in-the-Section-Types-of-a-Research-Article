@@ -3,17 +3,17 @@
 ### Overview of the repository
 In the **src** directory, you can find the following folders:
 
-1) an **xml** folder which contains example research articles in the field of Compulational Linguistics available from [ACL Anthology Reference Corpus](https://www.aclweb.org/anthology/); 
+1) an *xml* folder which contains example research articles in the field of Compulational Linguistics available from [ACL Anthology Reference Corpus](https://www.aclweb.org/anthology/); 
 
-2) a folder with java-based scripts (**sectionsretrieval**) which retrieve 5 section types from the research articles 
+2) a folder with java-based scripts (*sectionsretrieval*) which retrieve 5 section types from the research articles 
 
-3) a folder with scripts (**linguistic_features**) which retrieve the linguistic features and their frequency scores 
+3) a folder with scripts (*linguistic_features*) which retrieve the linguistic features and their frequency scores 
 
-4) **raw texts** which contains all detected and extracted sections from each analysed research article
+4) *raw texts* which contains all detected and extracted sections from each analysed research article
 
-5) a **dataset** folder which contains all computed values for each feature per section type
+5) a *dataset* folder which contains all computed values for each feature per section type
 
-6) a **supplements** folder which contains lists of extracted lexical chains, passive constructions, and examples of verbs which take 2 arguments (1st p. sg/pl subject and that-complement clause). 
+6) a *supplements* folder which contains lists of extracted lexical chains, passive constructions, and examples of verbs which take 2 arguments (1st p. sg/pl subject and that-complement clause). 
 
 
 ### How to run the scripts
