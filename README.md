@@ -28,5 +28,5 @@ In the **src** directory, you can find the following folders:
 - SpaCy version  2.2.4
 - When you load the scripts in the IDE, before you run them, make sure that you have configured the Python Interpreter. To do so:
   - go to File > Settings > Project: Users > Python Interpreter > Project interpreter > Expand the list of available interpreters > Select the target interpreter
-- To isntall spacy, you can use the following command: **pip install spacy**
-- To dowmload a statistical model, you can use the following command: **python -m spacy download en_core_web_sm**. It downloads the small statistical model for English.
+- To isntall spacy, you can use the following command: `pip install spacy`
+- To dowmload a statistical model, you can use the following command: `python -m spacy download en_core_web_sm`. It downloads the small statistical model for English.
