@@ -29,8 +29,7 @@ for line in f:
 
             # Initializing an empty list to which all NP occurrences per text will be appended.
             NPs = []
-            # NP_lengths= []
-
+    
             # An empty list to which all NPs containing adjective dependents will be appended.
             ADJ_DEP = []
             # An empty list to which all NPs containing noun dependents will be appended.
