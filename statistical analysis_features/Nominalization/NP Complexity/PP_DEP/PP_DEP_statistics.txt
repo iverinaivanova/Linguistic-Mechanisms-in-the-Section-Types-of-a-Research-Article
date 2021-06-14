@@ -1,0 +1,61 @@
+> summary(PP_DEP)
+    Abstract        Introduction      RelatedWork        Discussion     
+ Min.   :0.00000   Min.   :0.01688   Min.   :0.00000   Min.   :0.00000  
+ 1st Qu.:0.04762   1st Qu.:0.04864   1st Qu.:0.04305   1st Qu.:0.04152  
+ Median :0.06299   Median :0.05703   Median :0.05263   Median :0.05000  
+ Mean   :0.06410   Mean   :0.05778   Mean   :0.05306   Mean   :0.05129  
+ 3rd Qu.:0.07870   3rd Qu.:0.06563   3rd Qu.:0.06208   3rd Qu.:0.05957  
+ Max.   :0.17442   Max.   :0.13571   Max.   :0.10853   Max.   :0.14286  
+   Conclusion     
+ Min.   :0.00000  
+ 1st Qu.:0.04447  
+ Median :0.05802  
+ Mean   :0.05978  
+ 3rd Qu.:0.07338  
+ Max.   :0.14444 
+
+
+> sd(abstract)
+[1] 0.02404853
+> sd(intro)
+[1] 0.01358164
+> sd(rwork)
+[1] 0.01416107
+> sd(disc)
+[1] 0.01477317
+> sd(concl)
+[1] 0.02189797
+
+
+  Brown-Forsythe Test (alpha = 0.05) 
+------------------------------------------------------------- 
+  data : values and ind 
+
+  statistic  : 89.81367 
+  num df     : 4 
+  denom df   : 4495.003 
+  p.value    : 1.48979e-73 
+
+  Result     : Difference is statistically significant. 
+------------------------------------------------------------- 
+
+
+Wilcoxon signed rank test with continuity correction
+
+data:  c(abstract, intro, rwork, disc, concl)
+V = 15615666, p-value < 2.2e-16
+alternative hypothesis: true location is not equal to 0
+
+
+
+	Pairwise comparisons using Wilcoxon signed rank test 
+
+data:  Stacked_Sections$values and Stacked_Sections$ind 
+
+      abstract intro   rwork   disc   
+intro 2.1e-15  -       -       -      
+rwork < 2e-16  < 2e-16 -       -      
+disc  < 2e-16  < 2e-16 0.0031  -      
+concl 1.8e-06  0.1642  < 2e-16 < 2e-16
+
+P value adjustment method: bonferroni

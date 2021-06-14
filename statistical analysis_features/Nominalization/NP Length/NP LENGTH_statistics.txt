@@ -1,0 +1,55 @@
+> summary(np_length)
+    Abstract       Introduction     RelatedWork       Discussion    
+ Min.   :0.4268   Min.   :0.3793   Min.   :0.4640   Min.   :0.3912  
+ 1st Qu.:0.5828   1st Qu.:0.5742   1st Qu.:0.5805   1st Qu.:0.5426  
+ Median :0.6265   Median :0.6013   Median :0.6116   Median :0.5791  
+ Mean   :0.6293   Mean   :0.6026   Mean   :0.6132   Mean   :0.5829  
+ 3rd Qu.:0.6698   3rd Qu.:0.6275   3rd Qu.:0.6432   3rd Qu.:0.6178  
+ Max.   :0.8917   Max.   :0.8762   Max.   :0.8302   Max.   :0.8217  
+   Conclusion    
+ Min.   :0.3880  
+ 1st Qu.:0.5581  
+ Median :0.5994  
+ Mean   :0.6022  
+ 3rd Qu.:0.6390  
+ Max.   :1.1438 
+
+> sd(abstract)
+[1] 0.06665644
+> sd(intro)
+[1] 0.04352019
+> sd(rwork)
+[1] 0.04867428
+> sd(disc)
+[1] 0.05907843
+> sd(concl)
+[1] 0.06939864
+
+
+  Brown-Forsythe Test (alpha = 0.05) 
+------------------------------------------------------------- 
+  data : values and ind 
+
+  statistic  : 94.8225 
+  num df     : 4 
+  denom df   : 5030.966 
+  p.value    : 6.98246e-78 
+
+  Result     : Difference is statistically significant. 
+------------------------------------------------------------- 
+
+
+Wilcoxon signed rank test with continuity correction
+
+data:  c(abstract, intro, rwork, disc, concl)
+V = 15654810, p-value < 2.2e-16
+alternative hypothesis: true location is not equal to 0
+
+
+    abstract intro   rwork   disc   
+intro < 2e-16  -       -       -      
+rwork 5.5e-08  4.3e-07 -       -      
+disc  < 2e-16  < 2e-16 < 2e-16 -      
+concl < 2e-16  0.99    5.7e-08 5.8e-11
+
+P value adjustment method: bonferroni 

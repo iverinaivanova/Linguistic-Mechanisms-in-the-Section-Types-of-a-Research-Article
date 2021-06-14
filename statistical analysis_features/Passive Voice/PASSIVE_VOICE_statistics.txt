@@ -1,0 +1,42 @@
+    Abstract         Introduction       RelatedWork      
+ Min.   :0.000000   Min.   :0.000000   Min.   :0.000000  
+ 1st Qu.:0.000000   1st Qu.:0.003381   1st Qu.:0.003130  
+ Median :0.000000   Median :0.005592   Median :0.005820  
+ Mean   :0.005966   Mean   :0.006333   Mean   :0.006575  
+ 3rd Qu.:0.010000   3rd Qu.:0.008683   3rd Qu.:0.009206  
+ Max.   :0.056604   Max.   :0.029412   Max.   :0.042105  
+   Discussion         Conclusion      
+ Min.   :0.000000   Min.   :0.000000  
+ 1st Qu.:0.002663   1st Qu.:0.000000  
+ Median :0.005102   Median :0.003836  
+ Mean   :0.005894   Mean   :0.005208  
+ 3rd Qu.:0.008125   3rd Qu.:0.008547  
+ Max.   :0.030612   Max.   :0.040000
+
+
+
+Brown-Forsythe Test (alpha = 0.05) 
+------------------------------------------------------------- 
+  data : values and ind 
+
+  statistic  : 9.344836 
+  num df     : 4 
+  denom df   : 4609 
+  p.value    : 1.609996e-07 
+
+  Result     : Difference is statistically significant. 
+
+
+Wilcoxon signed rank test with continuity correction
+
+data:  c(abstract, intro, rwork, disc, concl)
+V = 8692365, p-value < 2.2e-16
+alternative hypothesis: true location is not equal to 0
+
+
+
+ abstract intro   rwork   disc   
+intro 0.0027   -       -       -      
+rwork 0.0011   1.0000  -       -      
+disc  0.8922   0.0283  0.0047  -      
+concl 0.0632   1.5e-10 4.1e-12 1.0e-05

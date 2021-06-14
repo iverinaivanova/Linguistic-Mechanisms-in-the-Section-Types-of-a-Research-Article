@@ -1,0 +1,57 @@
+> summary(epistemic_modals)
+    Abstract        Introduction      RelatedWork        Discussion     
+ Min.   :0.00000   Min.   :0.00000   Min.   :0.00000   Min.   :0.00000  
+ 1st Qu.:0.00000   1st Qu.:0.04000   1st Qu.:0.01961   1st Qu.:0.04444  
+ Median :0.00000   Median :0.06579   Median :0.04167   Median :0.07500  
+ Mean   :0.03724   Mean   :0.06970   Mean   :0.04663   Mean   :0.08358  
+ 3rd Qu.:0.06667   3rd Qu.:0.09412   3rd Qu.:0.07018   3rd Qu.:0.11628  
+ Max.   :0.37500   Max.   :0.27027   Max.   :0.25000   Max.   :0.33333  
+   Conclusion     
+ Min.   :0.00000  
+ 1st Qu.:0.04000  
+ Median :0.08333  
+ Mean   :0.08879  
+ 3rd Qu.:0.13158  
+ Max.   :0.38889 
+
+> sd(abstract)
+[1] 0.05132077
+> sd(intro)
+[1] 0.04253127
+> sd(rwork)
+[1] 0.0375342
+> sd(disc)
+[1] 0.05443424
+> sd(concl)
+[1] 0.0664306
+
+  Brown-Forsythe Test (alpha = 0.05) 
+------------------------------------------------------------- 
+  data : values and ind 
+
+  statistic  : 215.8292 
+  num df     : 4 
+  denom df   : 4836.2 
+  p.value    : 1.182443e-170 
+
+  Result     : Difference is statistically significant. 
+-------------------------------------------------------------
+
+
+
+Wilcoxon signed rank test with continuity correction
+
+data:  c(abstract, intro, rwork, disc, concl)
+V = 9620691, p-value < 2.2e-16
+alternative hypothesis: true location is not equal to 0
+
+
+	Pairwise comparisons using Wilcoxon signed rank test 
+
+      abstract intro   rwork   disc
+intro < 2e-16  -       -       -   
+rwork 4.3e-09  < 2e-16 -       -   
+disc  < 2e-16  6.5e-11 < 2e-16 -   
+concl < 2e-16  6.8e-15 < 2e-16 0.34
+
+P value adjustment method: bonferroni 
