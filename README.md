@@ -1,7 +1,7 @@
 ## Linguistic-Mechanisms-in-the-Sections-of-a-Research-Article
  
 ### Overview of the repository
-In the **src** directory, you can find the following folders:
+
 
 1) an *xml* folder which contains example research articles in the field of Compulational Linguistics available from [ACL Anthology Reference Corpus](https://www.aclweb.org/anthology/); 
 
