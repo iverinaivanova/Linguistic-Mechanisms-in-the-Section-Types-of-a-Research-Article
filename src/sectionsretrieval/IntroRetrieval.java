@@ -1,7 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * The script retrieves the introduction section by using the Scanner method which scans the input xml file line by line
+ * and searches for the keywords. If the line starts or ends with "1 Introduction" or "Introduction" or "Overview" or "Motivation"
+ * or "Problem" or "INTRODUCTION" and as long as
+ * there is a new line, the content of the lines is appended to a .txt file. If the line starts with a <sectionHeader>,
+ * which signals the beginning of a new section, the scanner stops.
  */
 package sectionsretrieval;
 
@@ -16,21 +18,20 @@ import static java.util.stream.DoubleStream.builder;
 import static java.util.stream.IntStream.builder;
 import org.w3c.dom.Document;
 
-/**
- *
- * @author Administrator
- */
+
 public class IntroRetrieval {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
-        // TODO code application logic here
 
-        File dir = new File("../papersectionsretrieval/all_xmls");
+        // Add the path to the input xml files
+        File dir = new File("../all_xmls");
         File[] files = dir.listFiles();
-        String path = "../papersectionsretrieval/acl_anthology_sections/introductions_texts.txt";
+
+        // Add the path to the file to which the extracted article sections will be appended
+        String path = "../introductions.txt";
         for (File file : files) {
             Scanner scan = new Scanner(file, "UTF-8");
             String contents = "";
