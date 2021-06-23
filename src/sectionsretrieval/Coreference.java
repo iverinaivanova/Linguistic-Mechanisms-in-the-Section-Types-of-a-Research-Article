@@ -1,9 +1,6 @@
 /*
- * This script scans the content of xml files line by line using the Scanner method.
- * If the line starts with "Introduction" ort ends with "Introduction", the program prints out
- * all the following lines that are part of the introduction section. Once it detects a line that starts 
- * with a <sectionHeader> tag, it stops because a new section starts.
- * Then for each introduction section, the StanfordCoreNLP annotates the coref chains.
+ * The script retrieves the sentence count and the total number of coreference chains per article section using
+ * the Stanford CoreNLP Module.
  */
 package sectionsretrieval;
 
@@ -30,12 +27,6 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-/**
- *
- * @author Iva
- */
-
-
 public class Coreference {
 
     public static void main(String... args) throws ParserConfigurationException, SAXException, IOException {
@@ -47,7 +38,8 @@ public class Coreference {
         // build pipeline
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 
-        File[] files = new File("C:/Users/Administrator/Documents/NetBeansProjects/PaperSectionsRetrieval/all_xmls").listFiles();
+        // Add the path to the input xml files
+        File[] files = new File("../all_xmls").listFiles();
         Arrays.sort(files);
         analyzeFiles(files, pipeline);
     }
@@ -57,7 +49,7 @@ public class Coreference {
         //Extracting the Introduction section, which can spread over several <bodyText> sections
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
-        String path = "C:/Users/Administrator/Documents/NetBeansProjects/PaperSectionsRetrieval/acl_anthology_sections/introductions.txt";
+        String path = "../introductions.txt";
         for (File file : files) {
             Document doc = (Document) builder.parse(file);
             //System.out.println("Analysing file: " + file.getName());
@@ -68,6 +60,7 @@ public class Coreference {
             String contents = "";
             while (scan.hasNextLine()) {
                 String myLine = scan.nextLine();
+                // It is set to extract the sentence count and the coreference chains from the introduction sections.
                 if (myLine.equals("1 Introduction") || myLine.endsWith("Introduction")) {
                     while (!(myLine.startsWith("<sectionHeader"))&& scan.hasNextLine()) {
                         myLine = scan.nextLine();
