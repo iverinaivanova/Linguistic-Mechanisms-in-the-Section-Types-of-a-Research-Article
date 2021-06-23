@@ -1,7 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * The script retrieves the abstract section by using the Scanner method which scans the input xml file line by line
+ * and searches for the keyword "Abstract". If the line starts or ends with "Abstract" or "ABSTRACT" and as long as
+ * there is a new line, the content of the lines is appended to a .txt file. If the line starts with a <sectionHeader>,
+ * which signals the beginning of a new section, the scanner stops.
  */
 package sectionsretrieval;
 
@@ -16,21 +17,21 @@ import static java.util.stream.DoubleStream.builder;
 import static java.util.stream.IntStream.builder;
 import org.w3c.dom.Document;
 
-/**
- *
- * @author Administrator
- */
 public class AbstractRetrieval {
 
-    /**
+    /*
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
-        // TODO code application logic here
 
-        File dir = new File("../papersectionsretrieval/all_xmls");
+        // Add the path to the input xml files
+        File dir = new File("../all_xmls");
+
+        // List all the xml files in the directory
         File[] files = dir.listFiles();
-        String path = "../sectionsretrieval/acl_anthology_sections/abstracts.txt";
+
+        // Add the path to the file to which the extracted article sections will be appended
+        String path = "../abstracts.txt";
         for (File file : files) {
             Scanner scan = new Scanner(file, "UTF-8");
             String contents = "";
