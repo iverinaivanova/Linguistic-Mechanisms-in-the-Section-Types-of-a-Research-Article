@@ -13,6 +13,8 @@ from spacy.matcher import Matcher
 # 'passive_matches_intros.txt' -- introductions,
 # 'passive_matches_rworks.txt' -- related works,
 # 'passive_matches_discs.txt' -- discussions.
+# To run the script, make sure that you place the .txt files in the same directory or 
+# add the full path to the files: "..supplements/passives/assive_matches_concls.txt".
 
 FILE_NAME = 'passive_matches_concls.txt'
 
