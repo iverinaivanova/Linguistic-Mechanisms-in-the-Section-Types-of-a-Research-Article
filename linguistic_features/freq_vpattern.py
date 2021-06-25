@@ -13,6 +13,9 @@ from spacy.matcher import Matcher
 # 'vpatternText_intros.txt' -- introductions,
 # 'vpatternText_rworks.txt' -- related works,
 # 'vpatternText_discs.txt' -- conclusions.
+# To run the script, make sure that you place the .txt files in the same directory in which the script is stored or 
+# add the full path to the files: "..supplements/vpattern/vpatternText_concls.txt".
+
 FILE_NAME = 'vpatternText_concls.txt'
 
 # Set this to the maximum number of files(articles) you want to process.
