@@ -15,9 +15,12 @@
 
 6) a folder with Mutual Information (MI) scores 
 
+7) a folder with example xml files from the corpus *all_xmls*
+
 
 ### ACL Anthology Corpus 
-The text corpus (i.e. the input xml files) can be downloaded from the ACL Anthology: https://www.aclweb.org/anthology/.
+The text corpus can be downloaded from the ACL Anthology: https://www.aclweb.org/anthology/. The folder *all_xmls*
+contain example xml files.
 
 ### How to run the scripts
 - When you download the java package and load it in your IDE, to run the *Coreference.java* script, which retrieves the total number of coreference chains per text, make sure that the subbranch called **Libraries** is not empty (i.e. it contains Stanford CoreNLP libraries that the script requires to run the CoreNLP annotators). If the Libraries directory is empty, do the following:
