@@ -12,6 +12,8 @@ logging.basicConfig(level=logging.DEBUG)
 # 'lex_chains_intros.txt' -- introductions,
 # 'lex_chains_rworks.txt' -- related works,
 # 'lex_chains_discs.txt' -- conclusions.
+# To run the script, make sure that you place the .txt files in the same directory in which the script is stored or 
+# add the full path to the files: "..supplements/vpattern/lex_chains_concls.txt".
 
 FILE_NAME = 'lex_chains_concls.txt'
 # Set this to the maximum number of files you want to process.
