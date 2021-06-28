@@ -15,7 +15,7 @@
 
 6) a folder with Mutual Information (MI) scores 
 
-7) a *all_xmls* folder with example xml files from the corpus.
+7) an *all_xmls* folder with example xml files from the corpus.
 
 
 ### ACL Anthology Corpus 
