@@ -19,7 +19,7 @@
 
 
 ### ACL Anthology Corpus 
-The whole corpus can be downloaded from the ACL Anthology: https://www.aclweb.org/anthology/. The folder *all_xmls*
+The whole corpus was downloaded from the ACL Anthology: https://www.aclweb.org/anthology/. The folder *all_xmls*
 contains example xml files to give an idea of the corpus format.
 
 ### How to run the scripts
