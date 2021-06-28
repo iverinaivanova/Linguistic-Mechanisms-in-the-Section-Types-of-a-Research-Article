@@ -15,12 +15,12 @@
 
 6) a folder with Mutual Information (MI) scores 
 
-7) a folder with example xml files from the corpus *all_xmls*
+7) a *all_xmls* folder with example xml files from the corpus.
 
 
 ### ACL Anthology Corpus 
-The text corpus can be downloaded from the ACL Anthology: https://www.aclweb.org/anthology/. The folder *all_xmls*
-contain example xml files.
+The whole corpus can be downloaded from the ACL Anthology: https://www.aclweb.org/anthology/. The folder *all_xmls*
+contains example xml files to give an idea of the corpus format.
 
 ### How to run the scripts
 - When you download the java package and load it in your IDE, to run the *Coreference.java* script, which retrieves the total number of coreference chains per text, make sure that the subbranch called **Libraries** is not empty (i.e. it contains Stanford CoreNLP libraries that the script requires to run the CoreNLP annotators). If the Libraries directory is empty, do the following:
@@ -33,5 +33,5 @@ contain example xml files.
 - SpaCy version  2.2.4
 - When you load the scripts in the IDE, before you run them, make sure that you have configured the Python Interpreter. To do so:
   - go to File > Settings > Project: Users > Python Interpreter > Project interpreter > Expand the list of available interpreters > Select the target interpreter
-- To isntall spacy, you can use the following command: `pip install spacy`
-- To dowmload a statistical model, you can use the following command: `python -m spacy download en_core_web_sm`. It downloads the small statistical model for English.
+- To install spacy, you can use the following command: `pip install spacy`
+- To download a statistical model, you can use the following command: `python -m spacy download en_core_web_sm`. It downloads the small statistical model for English.
