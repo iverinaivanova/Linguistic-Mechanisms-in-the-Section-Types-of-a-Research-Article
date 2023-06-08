@@ -18,8 +18,7 @@
 
 
 ### ACL Anthology Corpus 
-Source: ACL Anthology Reference Corpus: https://www.aclweb.org/anthology/ (Originally downloaded from the repo from: https://acl-arc.comp.nus.edu.sg/). The folder *all_xmls*
-contains example xml files to give the users an idea of the corpus format.
+Source: ACL Anthology Reference Corpus: https://www.aclweb.org/anthology/ (Originally downloaded from the repo from: https://acl-arc.comp.nus.edu.sg/). 
 
 ### How to run the scripts
 - When you download the java package and load it in your IDE, to run the *Coreference.java* script, which retrieves the total number of coreference chains per text, make sure that the subbranch called **Libraries** is not empty (i.e. it contains Stanford CoreNLP libraries that the script requires to run the CoreNLP annotators). If the Libraries directory is empty, do the following:
