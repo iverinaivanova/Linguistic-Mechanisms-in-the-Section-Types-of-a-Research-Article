@@ -33,3 +33,14 @@ Source: ACL Anthology Reference Corpus: https://www.aclweb.org/anthology/ (Origi
   - go to File > Settings > Project: Users > Python Interpreter > Project interpreter > Expand the list of available interpreters > Select the target interpreter
 - To install spacy, you can use the following command: `pip install spacy`
 - To download a statistical model, you can use the following command: `python -m spacy download en_core_web_sm`. It downloads the small statistical model for English.
+
+Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
+
+This work is licensed under a
+[Creative Commons Attribution 4.0 International License][cc-by].
+
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
